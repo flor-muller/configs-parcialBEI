@@ -1,0 +1,2 @@
+# configs-parcialBEI
+Configuraciones centralizadas
