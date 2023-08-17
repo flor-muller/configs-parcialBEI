@@ -11,7 +11,7 @@ spring:
           enabled: true
       routes:
         - id: catalogRoute
-          uri: lb://catalog-service/
+          uri: http://catalog-service/
           predicates:
             - Path=/catalog/**
 
