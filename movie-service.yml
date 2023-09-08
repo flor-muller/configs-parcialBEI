@@ -3,7 +3,7 @@ server:
 spring:
   sleuth:
     sampler:
-    probability: 1.0
+      probability: 1.0
   rabbitmq:
     addresses: localhost:5672
     virtual-host: app_vhost
@@ -13,8 +13,8 @@ spring:
     baseUrl: http://localhost:9411/
     enabled: true
     sender:
-    type: rabbit
-    enabled: true
+      type: rabbit
+      enabled: true
   application:
     name: movie-service
   datasource:
