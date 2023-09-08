@@ -68,3 +68,7 @@ resilence4j:
         maxAttempts: 3
         retryException:
           - feign.FeignException$InternalServerError       
+
+queue:
+  movie:
+    name: movieQueue
