@@ -2,33 +2,26 @@ server:
   port: 0
 
 spring:
+  mongodb:
+      embedded:
+        version: 4.0.2
   data:
     mongodb:
-      host: localhost
-      port: 27017
-      database: catalog-dev
-      username: usr-catalog
-      password: pwd-catalog
-
-sleuth:
-  sampler:
-    probability: 1.0
-
-rabbitmq:
-  addresses: localhost:5672
-  virtual-host: app_vhost
-  username: guest
-  password: guest
-
-zipkin:
-  baseUrl: http://localhost:9411/
-  enabled: true
-  sender:
-    type: rabbit
+        database: test
+        port: 27018
+  sleuth:
+    sampler:
+      probability: 1.0
+  rabbitmq:
+    username: guest
+    password: guest
+    host: localhost 
+    port: 5672
+  zipkin:
+    baseUrl: http://localhost:9411/
     enabled: true
-
-application:
-  name: catalog-service
+  application:
+    name: catalog-service
 
 eureka:
   client:

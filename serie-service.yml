@@ -5,17 +5,13 @@ spring:
     sampler:
       probability: 1.0
   rabbitmq:
-    host: rabbitmq 
-    port: 5672
     username: guest
     password: guest
-    virtual-host: / 
+    host: localhost 
+    port: 5672
   zipkin:
     baseUrl: http://zipkin:9411/ 
     enabled: true
-    sender:
-      type: rabbit
-      enabled: true
   application:
     name: serie-service
   mongodb:
@@ -24,6 +20,7 @@ spring:
   data:
     mongodb:
       database: test
+      port: 27017
 
 eureka:
   client:
