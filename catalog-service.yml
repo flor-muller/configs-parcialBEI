@@ -69,4 +69,4 @@ resilence4j:
         waitDuration: 1000
         maxAttempts: 3
         retryException:
-          - feign.FeignException$InternalServerError 
+          - java.net.ConnectException
