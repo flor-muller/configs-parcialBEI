@@ -65,7 +65,7 @@ resilence4j:
         automaticTransitionFromOpenToHalfOpenEnabled: true
   retry:
     instances:
-      movies:
+      catalogs:
         waitDuration: 1000
         maxAttempts: 3
         retryException:
