@@ -51,7 +51,7 @@ management:
     healt:
       show-details: always
 
-resilence4j:
+resilience4j:
   circuitbreaker:
     instances:
       catalogs:
