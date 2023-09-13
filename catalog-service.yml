@@ -54,7 +54,7 @@ management:
 resilence4j:
   circuitbreaker:
     instances:
-      movies:
+      catalogs:
         slidingWindowType: COUNT_BASED
         slidingWindowSize: 5
         failureRateThreshold: 50
